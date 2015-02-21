@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  * 
- * @author Razvan Moldovan - razvan.moldovan.com
+ * @author Razvan Moldovan - razvanmoldovan.com
  *
  * @param <T>
  */
@@ -34,13 +34,13 @@ public class JaccardCoefficient <T> {
 	private List<T> intersect(List<T> setA, List<T> setB) {
 		List<T> list = new ArrayList<T>();
 
-        for (T t : setA) {
-            if(setB.contains(t)) {
-                list.add(t);
-            }
-        }
+		for (T t : setA) {
+		    if(setB.contains(t)) {
+		        list.add(t);
+		    }
+		}
 
-        return list;
+		return list;
 	}
 	
 	/**
@@ -52,10 +52,10 @@ public class JaccardCoefficient <T> {
 	private List<T> union(List<T> setA, List<T> setB) {
 		Set<T> set = new HashSet<T>();
 
-        set.addAll(setA);
-        set.addAll(setB);
+		set.addAll(setA);
+		set.addAll(setB);
 
-        return new ArrayList<T>(set);
+		return new ArrayList<T>(set);
 	}
 }
 
